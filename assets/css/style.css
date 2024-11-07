@@ -261,7 +261,7 @@ body {
   "nav menu"
   "footer footer";
   grid-template-columns: 2fr 8fr;
-  grid-template-rows: 120px calc(100vh - 120px - 90px) 90px;
+  grid-template-rows: 120px calc(100vh - 120px - 60px) 60px;
   }
 
   menu {
