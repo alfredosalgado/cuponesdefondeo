@@ -191,7 +191,7 @@ footer {
 }
 
 .bg-tlg {
-  color: #08489b;
+  color: #3f82da;
 }
 
 .bg-wsp {
@@ -207,7 +207,6 @@ footer {
   font-weight: 400;
   font-style: normal;
   flex-direction: column;
-  border: 1px solid orange;
 }
 
 .icons {
@@ -289,6 +288,14 @@ body {
 
   .cupon {
     width: 80%;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .icons {
+    gap: 80px;
   }
 }
 
