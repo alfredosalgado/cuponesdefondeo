@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,700&family=Special+Elite&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #bed6f7;
+  grid-area: header;
+}
+
+.logo {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo > img {
+
+height: 100%;
+}
+
+nav {
+  background-color: #bed6f7;
+  grid-area: nav;
+}
+
+.lista {
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+menu {
+  background-color: #bed6f7;
+  grid-area: menu;
+
+  overflow: scroll;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+h2 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+article {
+ 
+  max-width: 80%;
+}
+
+.empresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+h3 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
+h4 {
+  font-weight: 800;
+}
+
+.cupon {
+  width: 50%;
+  height: 95px;
+  background-image: url(../img/cuponblack.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codigo {
+  padding-top: 5px;
+  cursor: pointer;
+  font-family: "Special Elite", serif;
+  font-weight: 800;
+  font-size: xx-large;
+  font-style: normal;
+}
+
+.expiracion {
+  font-style: italic;
+}
+
+.line > img {
+  width: 100%;
+}
+
+footer {
+  background-color: #176B87;
+  grid-area: footer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "nav"
+  "menu"
+  "footer";
+  grid-template-rows: 80px 60px calc(100vh - 80px - 60px - 70px) 70px
+}
+
+@media (min-width: 576px) {
+  body {
+    grid-template-areas:
+  "header header"
+  "nav menu"
+  "footer footer";
+  grid-template-columns: 2fr 11fr;
+  grid-template-rows: 90px calc(100vh - 90px - 90px) 90px;
+  }
+}
+

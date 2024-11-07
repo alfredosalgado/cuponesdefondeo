@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cupones de Fondeo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/img/logo3.png" alt="logo">
+    </div>
+  </header>
+  <nav>
+    <div class="lista">
+      <div>
+        <p>Apex</p>
+      </div>
+      <div>
+        <p>Bulenox</p>
+      </div>
+      <div>
+        <p>Uprofit</p>
+      </div>
+      <div>
+        <p>Earn2Trade</p>
+      </div>
+      <div>
+        <p>Take Profit Trader</p>
+      </div>
+    </div>
+  </nav>
+  <menu>
+    <section>
+      <h2>Apex Trading Funding</h2>
+      <article>
+        <div class="empresa">
+          <img src="./assets/img/Apex-removebg-preview.png" alt="apex">
+          <hr>
+          <h3>¡80% OFF!</h3>
+          <p>Obten un 80% de descuento en todas las cuentas Rithmic</p>
+          <h4>Cupon (toca para copiar):</h4>
+          <div class="cupon"><p class="codigo" onclick="copyToClipboard('WEIUN')">WEIU</p></div>
+          <p class="expiracion">Valido hasta agotar stock.</p>
+        </div>
+      </article>
+      <div class="line"><img src="./assets/img/line-removebg.png" alt=""></div>
+      <h2>Bulenox</h2>
+      <article>
+        <div><h3>menu</h3></div>
+      </article>
+      <h2>Uprofit</h2>
+      <article>
+        <div><h3>menu</h3></div>
+      </article>
+      <h2>Earn2Tarde</h2>
+      <article>
+        <div><h3>menu</h3></div>
+      </article>
+      <h2>Take Profit Tarder</h2>
+      <article>
+        <div><h3>menu</h3></div>
+      </article>
+    </section>
+  </menu>
+  <footer>
+    <div class="footer">
+      <p>Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        alert("Texto copiado al portapapeles");
+      })
+      .catch(err => {
+        console.error("Error al copiar el texto: ", err);
+      });
+  }
+</script>
+</body>
+</html>
