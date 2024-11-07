@@ -197,6 +197,10 @@ body {
   article {
     max-width: 60%;
   }
+
+  .cupon {
+    width: 80%;
+  }
 }
 
 @media (min-width: 976px) {
@@ -208,6 +212,10 @@ body {
   article {
     max-width: 40%;
   }
+
+  .cupon {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1276px) {
@@ -215,11 +223,19 @@ body {
   article {
     max-width: 30%;
   }
+
+  .cupon {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1776px) {
 
   article {
     max-width: 25%;
+  }
+
+  .cupon {
+    width: 40%;
   }
 }
