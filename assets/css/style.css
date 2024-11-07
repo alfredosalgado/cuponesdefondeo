@@ -79,6 +79,11 @@ article {
   gap: 10px;
 }
 
+.empresa > img {
+  max-width: 65%;
+  border-radius: 10px;
+}
+
 h3 {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
