@@ -255,9 +255,14 @@ body {
 }
 
 @media (min-width: 576px) {
+
+  header {
+    display: none;
+  }
+
   body {
     grid-template-areas:
-  "nav header"
+  "nav menu"
   "nav menu"
   "footer footer";
   grid-template-columns: 2fr 8fr;
