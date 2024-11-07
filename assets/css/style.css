@@ -128,6 +128,19 @@ h3 {
   font-weight: 800;
   font-style: normal;
   font-size: 32px;
+  animation: descuento 6s infinite alternate;
+}
+
+@keyframes descuento {
+  0% {color: #e40a90;}
+
+  25% {color: #478bff;}
+
+  50% {color: #ffba00;}
+
+  75% {color: #21bb5c;}
+
+  100% {color: #ff0067;}
 }
 
 h4 {
