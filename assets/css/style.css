@@ -79,8 +79,12 @@ article {
   gap: 10px;
 }
 
-.empresa > img {
-  max-width: 65%;
+.empresa > a {
+  width: 100%;
+}
+
+.empresa > a > img {
+  max-width: 60%;
   border-radius: 10px;
 }
 
@@ -97,11 +101,11 @@ h4 {
 
 .cupon {
   width: 50%;
-  height: 95px;
+  height: 90px;
   background-image: url(../img/cuponblack.png);
   background-repeat: no-repeat;
   background-size:cover;
-  background-position:bottom;
+  background-position:center;
   display: flex;
   justify-content: center;
   align-items: center;
