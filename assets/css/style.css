@@ -21,6 +21,10 @@ header {
   align-items: center;
 }
 
+.money {
+  display: none;
+}
+
 .logo {
   height: 80%;
 }
@@ -29,6 +33,8 @@ header {
 
 height: 100%;
 }
+
+.logo2 {display: none;}
 
 nav {
   background-color: #bed6f7;
@@ -53,6 +59,10 @@ nav {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
+.textnav:hover {
+  box-shadow: 0px 0px 15px rgba(8, 168, 29, 0.623);
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -61,7 +71,7 @@ a {
 menu {
   background-color: #bed6f7;
   grid-area: menu;
-
+  padding-top: 20px;
   overflow: scroll;
 }
 
@@ -75,9 +85,9 @@ section {
 
 h2 {
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
-  font-size: xx-large;
+  font-size: 42px;
 }
 
 article {
@@ -85,6 +95,12 @@ article {
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .empresa {
@@ -109,9 +125,9 @@ article {
 
 h3 {
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
-  font-size: x-large;
+  font-size: 32px;
 }
 
 h4 {
@@ -175,11 +191,43 @@ body {
 @media (min-width: 576px) {
   body {
     grid-template-areas:
-  "header header"
+  "nav header"
   "nav menu"
   "footer footer";
   grid-template-columns: 2fr 8fr;
   grid-template-rows: 120px calc(100vh - 120px - 90px) 90px;
+  }
+
+  menu {
+    padding-top: 0px;
+  }
+
+  .money {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+  }
+
+  .money > img {
+    width: 40%;
+    height: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .logo2 > img {
+  width: 100%;
+  height: 100%;
   }
 
   nav {
@@ -206,7 +254,7 @@ body {
 @media (min-width: 976px) {
 
   body {
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 2fr 8fr;
   }
 
   article {
@@ -230,6 +278,10 @@ body {
 }
 
 @media (min-width: 1776px) {
+
+  body {
+    grid-template-columns: 1fr 5fr;
+    }
 
   article {
     max-width: 25%;
