@@ -171,6 +171,32 @@ h4 {
 .expiracion {
   font-style: italic;
 }
+
+/* Estilos básicos para el botón */
+.details-button {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  padding: 0;
+}
+
+/* Ocultar el texto inicialmente */
+.details-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Mostrar el contenido cuando el checkbox esté activado */
+#toggle-details:checked + .details-button + .details-content {
+  display: block;
+}
+
 .line > img {
   width: 100%;
 }
