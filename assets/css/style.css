@@ -99,7 +99,6 @@ article {
 
 .empresa > a {
   width: 100%;
-  
 }
 
 .empresa > a > img {
@@ -120,7 +119,7 @@ h4 {
 }
 
 .cupon {
-  width: 50%;
+  width: 60%;
   height: 90px;
   background-image: url(../img/cuponblack.png);
   background-repeat: no-repeat;
@@ -179,7 +178,7 @@ body {
   "header header"
   "nav menu"
   "footer footer";
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 2fr 8fr;
   grid-template-rows: 120px calc(100vh - 120px - 90px) 90px;
   }
 
@@ -196,7 +195,31 @@ body {
   }
 
   article {
-    max-width: 20%;
+    max-width: 60%;
   }
 }
 
+@media (min-width: 976px) {
+
+  body {
+  grid-template-columns: 1fr 8fr;
+  }
+
+  article {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1276px) {
+
+  article {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 1776px) {
+
+  article {
+    max-width: 25%;
+  }
+}
