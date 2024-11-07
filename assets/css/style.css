@@ -34,8 +34,7 @@ nav {
   background-color: #bed6f7;
   grid-area: nav;
   border-radius: 10px;
-  margin: 3px;
-  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 15px #a3c5f5;
 }
 
 .lista {
@@ -49,6 +48,14 @@ nav {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 menu {
