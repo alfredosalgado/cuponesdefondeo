@@ -158,7 +158,6 @@ h4 {
 .expiracion {
   font-style: italic;
 }
-
 .line > img {
   width: 100%;
 }
@@ -174,6 +173,18 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
+.bg-you {
+  color: rgb(207, 52, 52);
+}
+
+.bg-tlg {
+  color: #08489b;
+}
+
+.bg-wsp {
+  color: #21bb5c;
+}
+
 .footer {
   display: flex;
   justify-content: space-evenly;
@@ -182,6 +193,17 @@ footer {
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
+  flex-direction: column;
+  border: 1px solid orange;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.textfoot {
+  font-style: italic;
 }
 
 body {
@@ -191,7 +213,7 @@ body {
   "nav"
   "menu"
   "footer";
-  grid-template-rows: 100px 90px calc(100vh - 100px - 90px - 70px) 70px;
+  grid-template-rows: 100px 90px calc(100vh - 100px - 90px - 100px) 100px;
 }
 
 @media (min-width: 576px) {
