@@ -213,21 +213,19 @@ details {
 
 summary {
   padding-bottom: 15px;
-  font-weight: 800;
   cursor: pointer;
   color: #007bff;
+  text-decoration: underline;
 }
 
 /* Flecha en contenido colapsado */
 details summary::marker {
-  content: "⮞ ";
   color: indigo;
   font-size: 1.2rem;
 }
 
 /* Flecha en contenido desplegado */
 details[open] summary::marker {
-  content: "⮟ ";
 }
 
 /* Mostrar el contenido cuando el checkbox esté activado */
