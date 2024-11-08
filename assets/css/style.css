@@ -237,6 +237,31 @@ input[type="checkbox"]:checked + .details-button + .details-content {
   display: block;
 }
 
+.button {
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 20px;
+  background-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.705);
+  border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.button:hover {
+  animation: bcolor 0.6s infinite alternate;
+}
+
+@keyframes bcolor {
+  0% {background-color: #e40a90;}
+
+  25% {background-color: #478bff;}
+
+  50% {background-color: #ffba00;}
+
+  75% {background-color: #21bb5c;}
+
+  100% {background-color: #ff0067;}
+}
+
 .line > img {
   width: 100%;
 }
