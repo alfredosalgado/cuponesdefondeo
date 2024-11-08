@@ -10,7 +10,7 @@
 }
 
 header {
-  background-color: #bed6f798;
+  background-color: #bed6f7ce;
   grid-area: header;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ height: 100%;
 nav {
   grid-area: nav;
   border-radius: 10px;
-  background-color: #bed6f7c2;
+  background-color: #bed6f7ce;
 }
 
 .lista {
@@ -51,7 +51,7 @@ nav {
   font-style: normal;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.281);
 }
 
 .textnav:hover {
@@ -88,14 +88,14 @@ article {
   max-width: 80%;
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.705);
   transition: 0.3s ease;
   background-color: #bed6f7ce;
 }
 
 article:hover {
   transform: translateY(-10px);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.808);
 }
 
 .empresa {
@@ -251,6 +251,18 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Capa blanca semi-transparente */
+  z-index: -1; /* Colocar detrás del contenido */
 }
 
 @media (min-width: 576px) {
