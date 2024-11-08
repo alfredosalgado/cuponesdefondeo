@@ -173,6 +173,10 @@ h5 {
   font-style: italic;
 }
 
+.update {
+  font-size: 14px;
+}
+
 /* Estilos básicos para el botón */
 .details-button {
   cursor: pointer;
