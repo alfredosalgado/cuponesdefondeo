@@ -289,6 +289,36 @@ footer {
   color: #21bb5c;
 }
 
+.bg-x {
+  color: #000000;
+}
+
+.bg-x:hover {
+  background-color:#ffffff6e;
+  box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.705);
+  border-radius: 10px;
+}
+
+.bg-tlg:hover {
+  background-color:#ffffff6e;
+  box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.705);
+  border-radius: 10px;
+}
+
+.bg-you:hover {
+  background-color:#ffffff6e;
+  box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.705);
+  border-radius: 10px;
+}
+
+.bg-insta:hover {
+  background-color:#ffffff6e;
+  box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.705);
+  border-radius: 10px;
+}
+
+
+
 .footer {
   display: flex;
   justify-content: space-evenly;
